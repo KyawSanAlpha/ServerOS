@@ -1,0 +1,19 @@
+===BEGIN LAB1 SUBMISSION===
+student_id: 6705140029
+timestamp: 2026-09-01T07:36:45Z
+hostname: ubuntu
+---[user: getent passwd]---
+olga264:x:1002:1004::/home/olga264:/bin/sh
+---[group: getent group]---
+research:x:1003:olga264
+---[user-in-group: id]---
+uid=1002(olga264) gid=1004(olga264) groups=1004(olga264),1003(research)
+---[file stat: home file mode/owner]---
+/home/olga264/report_4032.txt mode=700 owner=olga264 group=research
+---[sshd effective config]---
+port 22
+permitrootlogin yes
+passwordauthentication yes
+---[integrity]---
+sshd_sha256: 46a5c6e5da3aee40c5b71c5b19192fe64ca914acaa92d19bc6eef79e50926782
+===END LAB1 SUBMISSION===
